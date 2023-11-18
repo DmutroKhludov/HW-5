@@ -1,0 +1,31 @@
+.menu-link{
+    background-color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+.menu-item{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    height: 86%;
+    top: 0;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    background-color: gray;
+    transform: translateX(-120%);
+    transition: transform 500ms ease-in-out;
+}
+.menu-item:hover .submenu{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
